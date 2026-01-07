@@ -1,0 +1,69 @@
+body { margin: 0; font-size: 11px; font-family: "Arrial Narrow";}
+
+                @media print {
+                    *{
+                        font-family: "Times New Roman" !important;
+                    }
+                    .header, .header-space,
+                    .footer, .footer-space {
+                    }
+                    .wrapper{
+                        margin-top: 50px;
+                    }
+                    .header {
+                        position: fixed;
+                        top: 14px;
+                    }
+                    .footer {
+                        position: fixed;
+
+                        bottom: 7px;
+                    }
+                    .footer p{
+                        margin: 0px 0px !important;
+                    }
+                    p{
+                        margin: 1px 0px;
+                        font-size: 15px;
+                        font-weight: 700;
+                        font-family: Khaled;
+                    }
+                    .wrapper p{
+
+                        font-size: 18px;
+                        font-weight: 700;
+                        font-family: Khaled;
+                    }
+                    .single p{
+                        font-size: 15px !important;
+                        margin: 0px 0px !important;
+                    }
+                    .single {
+                        min-height:20px;
+                        overflow: hidden;
+                    }
+                    .row{
+                        overflow: hidden;
+                    }
+                    .margin-t{
+                        height: 273px;
+                        width: 100%;
+                    }
+                }
+
+                table {
+
+                }
+
+                td {
+                border-top: none;
+                border: 1px solid black;
+                }
+                th {
+                    border: none;
+                }
+
+                table {
+                width: 100%;
+                border-collapse: collapse;
+                }

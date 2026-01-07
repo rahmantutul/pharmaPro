@@ -1,0 +1,40 @@
+
+.btn {
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 2px;
+    text-decoration: none;
+    border: 1px solid inherit;
+    height: 40px;
+    padding: 10px 35px;
+    font-family: sans-serif;
+}
+
+.back-to-list {
+    background-color: #FF9800;
+    border: 1px solid #FF9800;
+    margin: 0 20px;
+}
+
+.back-to-dashboard {
+    background-color: #2196F3;
+    border: 1px solid #2196F3;
+    margin: 0 20px;
+}
+
+.print-button {
+    background-color: #4088f3;
+    border: 1px solid #673AB7;
+    margin: 0 20px;
+}
+.action-button {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #081624;
+    width: 100%;
+    text-align: center;
+    padding: 11px 0;
+    z-index: 123;
+}
