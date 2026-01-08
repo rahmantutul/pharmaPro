@@ -1,5 +1,22 @@
 <?php
 
+use App\Http\Controllers\InstallController;
+use Illuminate\Support\Facades\Route;
+
+// Installer Routes
+Route::prefix('install')->name('install.')->group(function () {
+    Route::get('/', [InstallController::class, 'index'])->name('index');
+    Route::get('/database', [InstallController::class, 'database'])->name('database');
+    Route::post('/database', [InstallController::class, 'setupDatabase'])->name('setupDatabase');
+    Route::get('/migrate', [InstallController::class, 'migrate'])->name('migrate');
+    Route::post('/run-migration', [InstallController::class, 'runMigration'])->name('runMigration');
+    Route::post('/run-seeding', [InstallController::class, 'runSeeding'])->name('runSeeding');
+    Route::get('/admin', [InstallController::class, 'admin'])->name('admin');
+    Route::post('/admin', [InstallController::class, 'setupAdmin'])->name('setupAdmin');
+    Route::get('/complete', [InstallController::class, 'complete'])->name('complete');
+});
+
+
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CategoryController;
@@ -23,7 +40,6 @@ use App\Http\Controllers\UnitController;
 use App\Http\Controllers\VendorController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Route;
 
 
 Route::get('/clear-cache', function() {
